@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>作业</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/word.css" />
+    </head>
+<!--      -->
+    <body class="bghome">
+        <div id="top-img"></div>
+        <div class = "navbar">
+            <div class="nav">
+                <ul>
+                    <li><a href="../../index.html">主页</a></li>
+                    <li>
+                        <a href="#">Java安装</a>
+                        <ol>
+                            <li><a href="javaTop.html">Java 简介</a></li>
+                            <li><a href="javaTwoWirte.html">Java 数据类型</a></li>
+                            <li><a href="javaThridWirte.html">Java 修饰符</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">C语言</a>
+                        <ol>
+                            <li><a href="../C/cTop.html">C 简介</a></li>
+                            <li><a href="../C/cOneWrite.html">C 环境设置</a></li>
+                            <li><a href="../C/cTwoWrite.html">C 存储类</a></li>
+                            <li><a href="../C/cThirdWrite.html">C 运算符</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">HTML语言</a>
+                        <ol>
+                            <li><a href="../HTML/htmlTop.html">HTML 简介</a></li>
+                            <li><a href="../HTML/htmlOneWrite.html">HTML 元素</a></li>
+                            <li><a href="../HTML/htmlTwoWrite.html">HTML 标题</a></li>
+                            <li><a href="../HTML/htmlThirdWrite.html">HTML 区块</a></li>
+                            <li><a href="../HTML/htmlFourWrite.html">HTML 列表</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="../../forme/forme.html">关于我</a></li>
+                    <!-- 定义滑动 -->
+                    <li class="underline"></li>
+                </ul>s
+            </div>
+        </div>
+        <div class="row">
+            <div class="centercolumn">
+                <div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+                <div class="card">
+                    <h6></h6>
+                    <div class="audio">
+                        <audio src="../../music/heartMusic.mp3" class="audio" autoplay="autoplay" controls="controls" preload="auto"></audio>
+                    </div>
+                </div>
+                <div class="card">
+    
+                    <h2 id="biaoti">安装Java</h2><br />
+                    <hr />
+                    <h4 id="qita">2022 年 5 月 16日</h4>
+                    <p style="text-indent:4em;font-size: 20px;">
+                        <strong>下载JDK</strong>
+                    </p>
+                    <p style="text-indent:4em">首先我们需要下载 java 开发工具包 JDK，下载地址：
+                        <a href="https://www.oracle.com/java/technologies/downloads/" target="_blank" rel="noopener noreferrer">https://www.oracle.com/java/technologies/downloads/</a>，
+                        在下载页面中根据自己的系统选择对应的版本。</p><p>
+                    </p>
+                    <p style="text-indent:2em">下载后 JDK 的安装根据提示进行，还有安装 JDK 的时候也会安装 JRE，一并安装就可以了。</p>
+                    <p style="text-indent:2em">安装JDK，安装过程中可以自定义安装目录等信息，例如我们选择安装目录为 <strong>C:\Program Files (x86)\Java\jdk1.8.0_91</strong>。</p>
+                    <p style="text-indent:4em;font-size: 20px;"><strong>配置环境变量</strong></p>
+                    <p style="text-indent:4em">在 "系统变量" 中设置 3 项属性，JAVA_HOME、PATH、CLASSPATH(大小写无所谓),若已存在则点击"编辑"，不存在则点击"新建"。</p>
+                    <p style="text-indent:4em"><strong>注意：</strong>如果使用 1.5 以上版本的 JDK，不用设置 CLASSPATH 环境变量，也可以正常编译和运行 Java 程序。</p>
+                    <p style="text-indent:4em;font-size: 20px;"><strong>变量设置参数如下：</strong></p>
+                    <ul style="text-indent:2em">
+                        <li>
+                            变量名：<strong>JAVA_HOME</strong> </li><li>
+                            变量值：<strong>C:\Program Files (x86)\Java\jdk1.8.0_91</strong>  &nbsp; &nbsp; &nbsp; &nbsp;// 要根据自己的实际路径配置</li></ul>      
+                            <ul style="text-indent:2em">
+                                <li>变量名：<strong>CLASSPATH</strong> </li>
+                                <li>变量值：<strong>.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;</strong>  &nbsp; &nbsp; &nbsp; &nbsp; //记得前面有个"."</li>
+                            </ul>  
+                            <ul style="text-indent:2em">
+                                <li>
+                                    变量名：<strong>Path</strong>
+                                </li>
+                                <li>
+                                    变量值：<strong>%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;</strong>
+                                </li>
+                            </ul>
+                    </ul>
+                    <p style="text-indent:4em;font-size: 20px;"><strong>注意：在cmd命令行输入java -version有相关反应的才为环境配置成功！</strong></p>
+                   </div>
+                <br /><br />
+                <div class="card"></div>
+            </div>
+        </div>
+        <script>
+            var pp = document.querySelector("h6");
+            var str = "在阅读中听听安静的音乐吧！"
+            n = 0;
+            var timer;
+            timer = setInterval(function () {
+                if (n < str.length) {
+                    pp.innerHTML += str.charAt(n);
+                    //sunstring(0,n)
+                    n++
+                } else {
+                    clearInterval(timer);
+                }
+            }, 100)
+        </script>
+        <div id="footer">Design By HuYanHong From Xinyu College<br/>21软件工程1班</div>
+    </body>
+</html>

@@ -1,0 +1,203 @@
+*{
+    /* 清楚内外边距 */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* 宽度占浏览器可视区域的高度 */
+    width: 100vmax;
+    background-color: #f2f2f2;
+}
+
+li{
+    list-style: none;
+}
+a{
+    font-family: "华文新魏";
+    font-size: xx-large;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #000;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    /* 盒子阴影 */
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+}
+
+.navbar .nav{
+    width: 1200px;
+    height: 100%;
+    /* 元素自动水平居中 */
+    margin: 0 auto;
+}
+
+.navbar .nav ul{
+    /* 相对定位 */
+    position: relative;
+    /* 弹性布局 */
+    display: flex;
+    /* 让子元素平均分配宽度 */
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .nav ul > li{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .nav ul > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+    text-align: center;
+}
+
+.navbar .nav ul > li ol{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    /* 让盒子先沿着y轴缩放到0，也就是自动隐藏 */
+    transform: scaleY(0);
+    /* 我们需要将盒子从上面滑动下来，设置缩放中心点 设置到最上面的中间位置 */
+    transform-origin: 50% 0;
+    /* 设置过渡 */
+    transition: all 0.6s;
+}
+
+.navbar .nav ul > li ol li{
+    height: 70px;
+    border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+.navbar .nav ul > li ol li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+    text-align: center;
+}
+
+.navbar .nav ul > li ol li:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-left: #ff9933;
+}
+
+.navbar .nav ul > li:hover ol{
+    transform: scaleY(1);
+    border-left: #ff9933;
+}
+
+.navbar .nav ul .underline{
+    position: absolute;
+    bottom: 0;
+    left: 720px;
+
+    width: 240px;
+    height: 6px;
+    /* 设置盒子左上角和右上角的圆角 */
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #cc3333;
+    /* 加上过渡动画 */
+    transition: all 0.5s;
+
+    pointer-events: none;
+}
+
+.navbar .nav ul .underline::before{
+    content: "";
+    /* 利用::::before伪元素设置三角 */
+    position: absolute;
+    top: -10px;
+    /* calc方法自动计算让其剧中 */
+    left: calc(50% - 9px);
+    width: 18px;
+    height: 10px;
+    background-color: inherit;
+    /* 画三角 */
+    clip-path: polygon(0 100%,50% 0,100% 100%);
+}
+
+.navbar .nav ul > li:nth-child(1):hover ~ .underline{
+    left: 0;
+    background-color: #ff9933;
+}
+.navbar .nav ul > li:nth-child(2):hover ~ .underline{
+    left: 240px;
+    background-color: #ff9933;
+}
+.navbar .nav ul > li:nth-child(3):hover ~ .underline{
+    left: 480px;
+    background-color: #9966cc;
+}
+.navbar .nav ul > li:nth-child(5):hover ~ .underline{
+    left: 960px;
+    background-color: #ff9933;
+}
+
+/* 定义顶部滑动彩虹条 */
+/* #top-img {
+    background: url(../img/top.gif);
+    height: 10px;
+    margin-top: -10px;
+    position: fixed;
+    width: 99%;
+    Z-index: 10;
+} */
+
+
+/* ..... */
+
+.audio audio{
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.bghome{
+        /* 100%的窗口高度 */
+        height: 1000vh;
+        /* 渐变背景 */
+        background: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
+        /* 指定背景图像的大小 */
+        background-size: 500%;
+        /* 执行动画方法 : 动画名 时长 线性的 无限次播放 */
+        animation: bgAnimation 15s linear infinite;
+}
+
+#footer {
+    height: 40px;
+    line-height: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    font-family: Arial;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* 定义动画 */
+@keyframes bgAnimation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}

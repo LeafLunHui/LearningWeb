@@ -1,0 +1,58 @@
+.centercolumn {
+    margin: auto;
+    width: 80%;
+    height:1000px;
+    padding: 20px;   
+}
+
+.card {
+    background-color:rgba(255,255,255,0.5);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+#biaoti {
+    text-align: center;
+}
+
+#qita {
+    text-align: right;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h6{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'LiSu';
+    color:black;
+}
+
+h1{
+    text-align: center;
+    font-family: "楷体";
+    font-size: 64px;
+    height: 100px;
+    color: antiquewhite;
+}
+
+h2{
+    text-align: center;
+    font-family: "楷体";
+    font-size: 40px;
+    height: 100px;
+    color: antiquewhite;
+}
+
+h3{
+    text-align: center;
+    font-family: "楷体";
+    font-size: 36px;
+    height: 100px;
+    color: antiquewhite;
+}

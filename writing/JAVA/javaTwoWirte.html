@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>作业</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/word.css" />
+    </head>
+<!--      -->
+    <body class="bghome">
+        <div id="top-img"></div>
+        <div class = "navbar">
+            <div class="nav">
+                <ul>
+                    <li><a href="../../index.html">主页</a></li>
+                    <li>
+                        <a href="#">Java数据类型</a>
+                        <ol>
+                            <li><a href="javaTop.html">Java 简介</a></li>
+                            <li><a href="javaOneWirte.html">Java 安装</a></li>
+                            <li><a href="javaThridWirte.html">Java 修饰符</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">C语言</a>
+                        <ol>
+                            <li><a href="../C/cTop.html">C 简介</a></li>
+                            <li><a href="../C/cOneWrite.html">C 环境设置</a></li>
+                            <li><a href="../C/cTwoWrite.html">C 存储类</a></li>
+                            <li><a href="../C/cThirdWrite.html">C 运算符</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">HTML语言</a>
+                        <ol>
+                            <li><a href="../HTML/htmlTop.html">HTML 简介</a></li>
+                            <li><a href="../HTML/htmlOneWrite.html">HTML 元素</a></li>
+                            <li><a href="../HTML/htmlTwoWrite.html">HTML 标题</a></li>
+                            <li><a href="../HTML/htmlThirdWrite.html">HTML 区块</a></li>
+                            <li><a href="../HTML/htmlFourWrite.html">HTML 列表</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="../../forme/forme.html">关于我</a></li>
+                    <!-- 定义滑动 -->
+                    <li class="underline"></li>
+                </ul>s
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="centercolumn">
+                <div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+                <div class="card">
+                    <h6></h6>
+                    <div class="audio">
+                        <audio src="../../music/heartMusic.mp3" class="audio" autoplay="autoplay" controls="controls" preload="auto"></audio>
+                    </div>
+                </div>
+                <div class="card">
+    
+                    <h2 id="biaoti">Java 基本数据类型</h2><br />
+                    <hr />
+                    <h4 id="qita">2022 年 5 月 16日</h4>
+                    <p>变量就是申请内存来存储值。也就是说，当创建变量的时候，需要在内存中申请空间。</p>
+                    <p>内存管理系统根据变量的类型为变量分配存储空间，分配的空间只能用来储存该类型数据。</p>
+                    <p><img src="../../img/twoIMG.png"></p>
+                    <p>因此，通过定义不同类型的变量，可以在内存中储存整数、小数或者字符。</p>
+                    <p>Java 的两大数据类型:</p>
+                    <ul><li>内置数据类型</li>
+                    <li>引用数据类型</li>
+                    </ul><hr />
+                    <h2>内置数据类型</h2>
+                    <p>Java语言提供了八种基本类型。六种数字类型（四个整数型，两个浮点型），一种字符类型，还有一种布尔型。 </p>
+                    <p><strong>byte：</strong></p>
+                    <ul>
+                        <li>
+                            byte 数据类型是8位、有符号的，以二进制补码表示的整数；</li>
+                        <li>
+                            最小值是 <span class="marked">-128（-2^7）</span>；</li>
+                        <li>
+                            最大值是 <span class="marked">127（2^7-1）</span>；</li>
+                        <li>
+                            默认值是 <span class="marked">0</span>；</li>
+                        <li>
+                            byte 类型用在大型数组中节约空间，主要代替整数，因为 byte 变量占用的空间只有 int 类型的四分之一；</li>
+                        <li>
+                            例子：byte a = 100，byte b = -50。</li>
+                    </ul>
+                    <p><strong>short：</strong></p>
+                    <ul>
+                        <li>
+                            short 数据类型是 16 位、有符号的以二进制补码表示的整数</li>
+                        <li>
+                            最小值是 <span class="marked">-32768（-2^15）</span>；</li>
+                        <li>
+                            最大值是 <span class="marked">32767（2^15 - 1）</span>；</li>
+                        <li>
+                            Short 数据类型也可以像 byte 那样节省空间。一个short变量是int型变量所占空间的二分之一；</li>
+                        <li>
+                            默认值是 <span class="marked">0</span>；</li>
+                        <li>
+                            例子：short s = 1000，short r = -20000。</li>
+                    </ul>
+                    <p><strong>int：</strong></p>
+                    <ul>
+                        <li>
+                            int 数据类型是32位、有符号的以二进制补码表示的整数；</li>
+                        <li>
+                            最小值是 <span class="marked">-2,147,483,648（-2^31）</span>；</li>
+                        <li>
+                            最大值是 <span class="marked">2,147,483,647（2^31 - 1）</span>；</li>
+                        <li>
+                            一般地整型变量默认为 int 类型；</li>
+                        <li>
+                            默认值是 <span class="marked">0</span> ；</li>
+                        <li>
+                            例子：int a = 100000, int b = -200000。</li>
+                    </ul>
+                    <p><strong>long：</strong></p>
+                    <ul>
+                        <li>
+                            long 数据类型是 64 位、有符号的以二进制补码表示的整数；</li>
+                        <li>
+                            最小值是 <span class="marked">-9,223,372,036,854,775,808（-2^63）</span>；</li>
+                        <li>
+                            最大值是 <span class="marked">9,223,372,036,854,775,807（2^63 -1）</span>；</li>
+                        <li>
+                            这种类型主要使用在需要比较大整数的系统上；</li>
+                        <li>
+                            默认值是 <span class="marked">0L</span>；</li>
+                        <li>
+                            例子： <span class="marked">long a = 100000L</span>，<span class="marked">long b = -200000L</span>。<br>
+                    "L"理论上不分大小写，但是若写成"l"容易与数字"1"混淆，不容易分辩。所以最好大写。
+                    </li>
+                    </ul>
+                    <p><strong>float：</strong></p>
+                    <ul>
+                        <li>
+                            float 数据类型是单精度、32位、符合IEEE 754标准的浮点数；</li>
+                        <li>
+                            float 在储存大型浮点数组的时候可节省内存空间；</li>
+                        <li>
+                            默认值是 <span class="marked">0.0f</span>；</li>
+                        <li>
+                            浮点数不能用来表示精确的值，如货币；</li>
+                        <li>
+                            例子：float f1 = 234.5f。</li>
+                    </ul>
+                    <p><strong>double：</strong></p>
+                    <ul>
+                        <li>
+                            double 数据类型是双精度、64 位、符合 IEEE 754 标准的浮点数；</li>
+                        <li>
+                            浮点数的默认类型为 double 类型；</li>
+                        <li>
+                            double类型同样不能表示精确的值，如货币；</li>
+                        <li>
+                            默认值是 <span class="marked">0.0d</span>；</li>
+                        <li>
+                            <p>例子：</p>
+                    
+                    <pre>double   d1  = 7D ;
+                    double   d2  = 7.; 
+                    double   d3  =  8.0; 
+                    double   d4  =  8.D; 
+                    double   d5  =  12.9867; </pre>
+                    <p>7 是一个 int 字面量，而 7D，7. 和 8.0 是 double 字面量。</p>
+                    </li>
+                    </ul>
+                    <p><strong>boolean：</strong></p>
+                    <ul>
+                        <li>
+                            boolean数据类型表示一位的信息；</li>
+                        <li>
+                            只有两个取值：true 和 false；</li>
+                        <li>
+                            这种类型只作为一种标志来记录 true/false 情况；</li>
+                        <li>
+                            默认值是 <span class="marked">false</span>；</li>
+                        <li>
+                            例子：boolean one = true。</li>
+                    </ul>
+                    <p><strong>char：</strong></p>
+                    <ul>
+                        <li>
+                            char 类型是一个单一的 16 位 Unicode 字符；</li>
+                        <li>
+                            最小值是 <span class="marked">\u0000</span>（十进制等效值为 0）；</li>
+                        <li>
+                            最大值是 <span class="marked">\uffff</span>（即为 65535）；</li>
+                        <li>
+                            char 数据类型可以储存任何字符；</li>
+                        <li>
+                            例子：char letter = 'A';。</li>
+                    </ul>
+                    <hr />
+                    <h2>引用类型</h2>
+                    <ul>
+                        <li>
+                            在Java中，引用类型的变量非常类似于C/C++的指针。引用类型指向一个对象，指向对象的变量是引用变量。这些变量在声明时被指定为一个特定的类型，比如 Employee、Puppy 等。变量一旦声明后，类型就不能被改变了。</li>
+                        <li>
+                            对象、数组都是引用数据类型。</li>
+                        <li>
+                            所有引用类型的默认值都是null。</li>
+                        <li>
+                            一个引用变量可以用来引用任何与之兼容的类型。</li>
+                        <li>
+                            例子：Site site = new Site("Runoob")。</li>
+                    </ul>
+                    <hr>
+                    <h2>Java 常量</h2>
+                    <p>常量在程序运行时是不能被修改的。</p>
+                    <p>在 Java 中使用 final 关键字来修饰常量，声明方式和变量类似：</p>
+                    <pre>
+                    final double PI = 3.1415927;
+                    </pre>
+                    <p>
+                    虽然常量名也可以用小写，但为了便于识别，通常使用大写字母表示常量。
+                    </p>
+                   </div>
+                <br /><br />
+                <div class="card"></div>
+            </div>
+        </div>
+        <script>
+            var pp = document.querySelector("h6");
+            var str = "在阅读中听听安静的音乐吧！"
+            n = 0;
+            var timer;
+            timer = setInterval(function () {
+                if (n < str.length) {
+                    pp.innerHTML += str.charAt(n);
+                    //sunstring(0,n)
+                    n++
+                } else {
+                    clearInterval(timer);
+                }
+            }, 100)
+        </script>
+        <div id="footer">Design By HuYanHong From Xinyu College<br/>21软件工程1班</div>
+    </body>
+</html>

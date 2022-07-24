@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>HTML 列表</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/word.css" />
+    </head>
+<!--      -->
+    <body class="bghome">
+        <div id="top-img"></div>
+        <div class = "navbar">
+            <div class="nav">
+                <ul>
+                    <li><a href="../../index.html">主页</a></li>
+                    <li>
+                        <a href="#">Java语言</a>
+                        <ol>
+                            <li><a href="../JAVA/javaTop.html">Java 简介</a></li>
+                            <li><a href="../JAVA/javaOneWirte.html">Java 安装</a></li>
+                            <li><a href="../JAVA/javaTwoWirte.html">Java 数据类型</a></li>
+                            <li><a href="../JAVA/javaThridWirte.html">Java 修饰符</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">C语言</a>
+                        <ol>
+                            <li><a href="../C/cTop.html">C 简介</a></li>
+                            <li><a href="../C/cOneWrite.html">C 环境设置</a></li>
+                            <li><a href="../C/cTwoWrite.html">C 存储类</a></li>
+                            <li><a href="../C/cThirdWrite.html">C 运算符</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">HTML 列表</a>
+                        <ol>
+                            <li><a href="htmlTop.html">HTML 简介</a></li>
+                            <li><a href="htmlOneWrite.html">HTML 元素</a></li>
+                            <li><a href="htmlTwoWrite.html">HTML 标题</a></li>
+                            <li><a href="htmlThirdWrite.html">HTML 区块</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="../../forme/forme.html">关于我</a></li>
+                    <!-- 定义滑动 -->
+                    <li class="underline"></li>
+                </ul>s
+            </div>
+        </div>
+        <div class="row">
+            <div class="centercolumn">
+                <div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+                <div class="card">
+                    <h6></h6>
+                    <div class="audio">
+                        <audio src="../../music/heartMusic.mp3" class="audio" autoplay="autoplay" controls="controls" preload="auto"></audio>
+                    </div>
+                </div>
+                <div class="card">
+    
+                    <h2 id="biaoti">HTML 列表</h2><br />
+                    <hr />
+                    <h4 id="qita">2022 年 5 月 25日</h4>
+                    <p style="text-indent:2em;font-size: 30px;font-family: 'STKaiti'; ">HTML 支持有序、无序和定义列表:</p>
+                    <table width="100%" border="0">
+                        <tbody><tr>
+                        <td width="50%">
+                        <h3>有序列表</h3>
+                        <ol style="text-indent:2em;font-size: 30px;font-family: 'STKaiti'; ">
+                            <li>1.第一个列表项</li>
+                            <li>2.第二个列表项</li>
+                            <li>3.第三个列表项</li>
+                        </ol>
+                        </td>
+                        <td width="50%">
+                        <h3>无序列表</h3>
+                        <ul style="text-indent:2em;font-size: 30px;font-family: 'STKaiti'; ">
+                            <li>·列表项</li>
+                            <li>·列表项</li>
+                            <li>·列表项</li>
+                        </ul>
+                        </td>
+                        </tr></tbody></table>
+                        <!--  -->
+                        <hr/>
+                        <p style="font-size: 30px;font-family: 'STKaiti'; "><br/>ul是unordered lists的缩写 (无序列表)<br/>
+
+                            li是list item的缩写 （列表项目）<br/>
+                            
+                            ol是ordered lists的缩写（有序列表）<br/>
+                            
+                            dl是definition lists的英文缩写 (自定义列表)<br/>
+                             
+                            dt是definition term的缩写 (自定义列表组)<br/>
+                            
+                            dd是definition description的缩写（自定义列表描述）<br/>
+                            
+                            nl是navigation lists的英文缩写 （导航列表）<br/>
+                            
+                            tr是table row的缩写 （表格中的一行）<br/>
+                            
+                            th是table header cell的缩写 （表格中的表头）<br/>
+                            
+                            td是table data cell的缩写 （表格中的一个单元格）<br/></p>
+
+                <div class="card"><hr/></div>
+            </div>
+        </div>
+        <script>
+            var pp = document.querySelector("h6");
+            var str = "在阅读中听听安静的音乐吧！"
+            n = 0;
+            var timer;
+            timer = setInterval(function () {
+                if (n < str.length) {
+                    pp.innerHTML += str.charAt(n);
+                    //sunstring(0,n)
+                    n++
+                } else {
+                    clearInterval(timer);
+                }
+            }, 100)
+        </script>
+        <div id="footer">Design By HuYanHong From Xinyu College<br/>21软件工程1班</div>
+    </body>
+</html>

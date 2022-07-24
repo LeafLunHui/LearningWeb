@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>C 存储类</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/word.css" />
+    </head>
+<!--      -->
+    <body class="bghome">
+        <div id="top-img"></div>
+        <div class = "navbar">
+            <div class="nav">
+                <ul>
+                    <li><a href="../../index.html">主页</a></li>
+                    <li>
+                        <a href="#">Java语言</a>
+                        <ol>
+                            <li><a href="../JAVA/javaTop.html">Java 简介</a></li>
+                            <li><a href="../JAVA/javaOneWirte.html">Java 安装</a></li>
+                            <li><a href="../JAVA/javaTwoWirte.html">Java 数据类型</a></li>
+                            <li><a href="../JAVA/javaThridWirte.html">Java 修饰符</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">C 存储类</a>
+                        <ol>
+                            <li><a href="cTop.html">C 简介</a></li>
+                            <li><a href="cOneWrite.html">C 环境设置</a></li>
+                            <li><a href="cThirdWrite.html">C 运算符</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">HTML语言</a>
+                        <ol>
+                            <li><a href="../HTML/htmlTop.html">HTML 简介</a></li>
+                            <li><a href="../HTML/htmlOneWrite.html">HTML 元素</a></li>
+                            <li><a href="../HTML/htmlTwoWrite.html">HTML 标题</a></li>
+                            <li><a href="../HTML/htmlThirdWrite.html">HTML 区块</a></li>
+                            <li><a href="../HTML/htmlFourWrite.html">HTML 列表</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="../../forme/forme.html">关于我</a></li>
+                    <!-- 定义滑动 -->
+                    <li class="underline"></li>
+                </ul>s
+            </div>
+        </div>
+        <div class="row">
+            <div class="centercolumn">
+                <div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+                <div class="card">
+                    <h6></h6>
+                    <div class="audio">
+                        <audio src="../../music/heartMusic.mp3" class="audio" autoplay="autoplay" controls="controls" preload="auto"></audio>
+                    </div>
+                </div>
+                <div class="card">
+    
+                    <h2 id="biaoti">C 存储类</h2><br />
+                    <hr />
+                    <h4 id="qita">2022 年 5 月 18日</h4>
+                    <p style="text-indent:2em;font-size: 30px;font-family: 'STKaiti'; ">存储类定义 C 程序中变量/函数的范围（可见性）和生命周期。这些说明符放置在它们所修饰的类型之前。下面列出 C 程序中可用的存储类：</p>
+                    <ul style="text-indent:2em;font-size: 30px;font-family: 'STKaiti'; ">
+                        <li>auto</li>
+                        <li>register</li>
+                        <li>static</li>
+                        <li>extern</li>
+                    </ul>
+                    <h2>auto 存储类</h2>
+                    <p style="text-indent:2em;font-size: 30px;font-family: 'STKaiti'; "><b>auto</b> 存储类是所有局部变量默认的存储类。</p>
+                    <pre style="font-size: 30px;font-family: 'STKaiti'; ">
+                    {
+                    int mount;
+                    auto int month;
+                    }
+                    </pre>
+                    <p style="text-indent:2em;font-size: 30px;font-family: 'STKaiti'; ">上面的实例定义了两个带有相同存储类的变量，auto 只能用在函数内，即 auto 只能修饰局部变量。</p>
+
+                    <h2>register 存储类</h2>
+                    <p style="text-indent:2em;font-size: 30px;font-family: 'STKaiti'; "><b>register</b> 存储类用于定义存储在寄存器中而不是 RAM 中的局部变量。这意味着变量的最大尺寸等于寄存器的大小（通常是一个字），且不能对它应用一元的 '&amp;' 运算符（因为它没有内存位置）。</p>
+                    <pre style="font-size: 30px;font-family: 'STKaiti'; ">
+                    {
+                    register int  miles;
+                    }
+                    </pre>
+                    <p style="text-indent:2em;font-size: 30px;font-family: 'STKaiti'; ">寄存器只用于需要快速访问的变量，比如计数器。还应注意的是，定义 'register' 并不意味着变量将被存储在寄存器中，它意味着变量可能存储在寄存器中，这取决于硬件和实现的限制。</p>
+                    <h2>static 存储类</h2>
+                    <p style="text-indent:2em;font-size: 30px;font-family: 'STKaiti'; "><b>static</b> 存储类指示编译器在程序的生命周期内保持局部变量的存在，而不需要在每次它进入和离开作用域时进行创建和销毁。因此，使用 static 修饰局部变量可以在函数调用之间保持局部变量的值。</p>
+                    <p style="text-indent:2em;font-size: 30px;font-family: 'STKaiti'; ">static 修饰符也可以应用于全局变量。当 static 修饰全局变量时，会使变量的作用域限制在声明它的文件内。</p>
+                    <p style="text-indent:2em;font-size: 30px;font-family: 'STKaiti'; ">全局声明的一个 static 变量或方法可以被任何函数或方法调用，只要这些方法出现在跟 static 变量或方法同一个文件中。</p>
+                    <h2>extern 存储类</h2>
+                    <p style="text-indent:2em;font-size: 30px;font-family: 'STKaiti'; "><b>extern</b> 存储类用于提供一个全局变量的引用，全局变量对所有的程序文件都是可见的。当您使用 <strong>extern</strong> 时，对于无法初始化的变量，会把变量名指向一个之前定义过的存储位置。</p>
+                    <p style="text-indent:2em;font-size: 30px;font-family: 'STKaiti'; ">当您有多个文件且定义了一个可以在其他文件中使用的全局变量或函数时，可以在其他文件中使用 <i>extern</i> 来得到已定义的变量或函数的引用。可以这么理解，<i>extern</i> 是用来在另一个文件中声明一个全局变量或函数。</p>
+
+                <div class="card"><hr/></div>
+            </div>
+        </div>
+        <script>
+            var pp = document.querySelector("h6");
+            var str = "在阅读中听听安静的音乐吧！"
+            n = 0;
+            var timer;
+            timer = setInterval(function () {
+                if (n < str.length) {
+                    pp.innerHTML += str.charAt(n);
+                    //sunstring(0,n)
+                    n++
+                } else {
+                    clearInterval(timer);
+                }
+            }, 100)
+        </script>
+        <div id="footer">Design By HuYanHong From Xinyu College<br/>21软件工程1班</div>
+    </body>
+</html>
